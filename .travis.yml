@@ -1,0 +1,4 @@
+language: csharp
+solution: OverlayPlugin.sln
+script:
+  - msbuild /p:Configuration=Release OverlayPlugin.sln /p:Platform=x86 /p:OutputPath="%~dp0\BuildX86"
